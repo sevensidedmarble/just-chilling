@@ -1,18 +1,29 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+  .home
+    section.hero.is-primary
+      .hero-body.has-text-left
+        .container
+          h1.title Just Chilling
+          h2.subtitle
+            | Everything you type will be spoken out loud to every other user connected. Try it out!
+            |
+            | Please be polite!
+    section.container
+      section.section
+        chat
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    chat: () => import('@/components/Chat.vue')
   }
 }
 </script>
+
+<!-- <style lang="sass"> -->
+<!--   .hero -->
+<!--     padding-left: 3em -->
+<!--     padding-right: 3em -->
+<!-- </style> -->
