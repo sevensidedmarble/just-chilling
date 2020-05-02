@@ -25,17 +25,17 @@
         .field.is-grouped
           .control
             button.button.is-success(type='submit') Send
-    .box.has-background-white-ter
-      h3.title Settings
-      form(@submit.prevent='editName')
-        .field.is-horizontal
-          .field-label.is-normal
-            label.label(for='name') Name:
-          .field-body
-            .field
-              .control
-                input.input(type='text' v-model='name')
-      pre {{ name }}
+    //- .box.has-background-white-ter
+    //-   h3.title Settings
+    //-   form(@submit.prevent='editName')
+    //-     .field.is-horizontal
+    //-       .field-label.is-normal
+    //-         label.label(for='name') Name:
+    //-       .field-body
+    //-         .field
+    //-           .control
+    //-             input.input(type='text' v-model='name')
+    //-   pre {{ name }}
 </template>
 
 <script>
